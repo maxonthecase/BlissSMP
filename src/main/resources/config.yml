@@ -1,0 +1,48 @@
+# BlissSMP Configuration
+prefix: "&8[&bBliss&3SMP&8] "
+
+# Max homes per player (use permissions blisssmp.homes.X for per-player limits)
+max-homes: 3
+
+# Teleport delay in seconds (0 to disable)
+teleport-delay: 3
+
+# TPA request timeout in seconds
+tpa-timeout: 60
+
+# Back command: save location on death
+back-on-death: true
+
+# Kits configuration
+kits:
+  starter:
+    cooldown: 0  # 0 = one-time only
+    items:
+      - STONE_SWORD:1
+      - COOKED_BEEF:16
+      - TORCH:32
+      - OAK_LOG:64
+  daily:
+    cooldown: 86400  # 24 hours in seconds
+    items:
+      - GOLDEN_APPLE:3
+      - COOKED_BEEF:32
+      - ARROW:64
+      - EXPERIENCE_BOTTLE:5
+  weekly:
+    cooldown: 604800  # 7 days
+    items:
+      - DIAMOND:5
+      - IRON_INGOT:32
+      - GOLDEN_APPLE:8
+      - ELYTRA:1
+
+# Chat format
+chat-format: "&7[{world}] &r{displayname}&7: &f{message}"
+
+# Join/quit messages
+join-message: "&a+ &e{player} &ajoined the server!"
+quit-message: "&c- &e{player} &cleft the server."
+
+# Death messages (use {player} and {cause})
+show-death-coordinates: true
