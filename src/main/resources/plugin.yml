@@ -1,0 +1,114 @@
+name: BlissSMP
+version: ${project.version}
+main: com.blisssmp.BlissSMP
+api-version: 1.12
+description: Custom SMP plugin for BlissSMP
+authors: [BlissSMP]
+
+commands:
+  sethome:
+    description: Set your home location
+    usage: /sethome [name]
+    permission: blisssmp.home
+  home:
+    description: Teleport to your home
+    usage: /home [name]
+    permission: blisssmp.home
+  delhome:
+    description: Delete a home
+    usage: /delhome <name>
+    permission: blisssmp.home
+  homes:
+    description: List your homes
+    usage: /homes
+    permission: blisssmp.home
+  tpa:
+    description: Request to teleport to a player
+    usage: /tpa <player>
+    permission: blisssmp.tpa
+  tpaccept:
+    description: Accept a teleport request
+    usage: /tpaccept
+    permission: blisssmp.tpa
+  tpdeny:
+    description: Deny a teleport request
+    usage: /tpdeny
+    permission: blisssmp.tpa
+  spawn:
+    description: Teleport to spawn
+    usage: /spawn
+    permission: blisssmp.spawn
+  setspawn:
+    description: Set the server spawn
+    usage: /setspawn
+    permission: blisssmp.admin
+  back:
+    description: Teleport to your last location
+    usage: /back
+    permission: blisssmp.back
+  kit:
+    description: Claim a kit
+    usage: /kit <name>
+    permission: blisssmp.kit
+  kits:
+    description: List available kits
+    usage: /kits
+    permission: blisssmp.kit
+  heal:
+    description: Heal yourself or a player
+    usage: /heal [player]
+    permission: blisssmp.heal
+  feed:
+    description: Feed yourself or a player
+    usage: /feed [player]
+    permission: blisssmp.feed
+  fly:
+    description: Toggle flight
+    usage: /fly [player]
+    permission: blisssmp.fly
+  god:
+    description: Toggle god mode
+    usage: /god [player]
+    permission: blisssmp.god
+  nick:
+    description: Set your nickname
+    usage: /nick <nickname|off>
+    permission: blisssmp.nick
+  msg:
+    description: Send a private message
+    usage: /msg <player> <message>
+    permission: blisssmp.msg
+  reply:
+    description: Reply to last message
+    usage: /reply <message>
+    permission: blisssmp.msg
+  blisssmp:
+    description: Main BlissSMP command
+    usage: /blisssmp
+    aliases: [bsmp]
+
+permissions:
+  blisssmp.home:
+    default: true
+  blisssmp.tpa:
+    default: true
+  blisssmp.spawn:
+    default: true
+  blisssmp.back:
+    default: true
+  blisssmp.kit:
+    default: true
+  blisssmp.heal:
+    default: op
+  blisssmp.feed:
+    default: op
+  blisssmp.fly:
+    default: op
+  blisssmp.god:
+    default: op
+  blisssmp.nick:
+    default: true
+  blisssmp.msg:
+    default: true
+  blisssmp.admin:
+    default: op
