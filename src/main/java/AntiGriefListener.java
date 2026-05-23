@@ -19,7 +19,7 @@ public class AntiGriefListener implements Listener {
 
     private final BlissSMP plugin;
     private final Set<Material> dangerousItems = new HashSet<>(Arrays.asList(
-        Material.FLINT_AND_STEEL, Material.FIRE_CHARGE
+        Material.FLINT_AND_STEEL, Material.FIREBALL
     ));
 
     public AntiGriefListener(BlissSMP plugin) {
